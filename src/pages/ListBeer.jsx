@@ -8,6 +8,21 @@ function ListBeer() {
  
     const [beersList, setBeersList] = useState()
     const [loading, setLoading] = useState(true)
+    // const [filterBeers, setFilterBeers] = useState()
+
+    // const [search, setSearch] = useState("")
+
+    // const searchBeer = (search) => {
+    //     const filterBeer = beersList.filter((eachProd) => {
+    //         return eachProd.name.includeS(search)
+    //     })
+    //     setFilterBeers(filterBeer)
+    // }
+
+
+    // const handleSearch = (event) => {
+    //     setSearch(event.target.value)
+    // }
 
     useEffect (() => {
         getBeerList()
@@ -40,6 +55,13 @@ function ListBeer() {
             <br />
             <br />
                 <div>
+                <div>
+                    {/* <form >
+                        <label htmlFor="search">Search:</label>
+                        <input type="text" name='search' value={search} onChange={handleSearch}/>
+
+                    </form> */}
+                </div>
                     {
                         beersList.map((eachBeer, index) =>{
                             return(

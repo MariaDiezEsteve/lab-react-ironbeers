@@ -41,19 +41,23 @@ function SingleBeer() {
         </header>
         <br />
         <br />
-         <div>
-                <img src={beerDetails.image_url} alt="imageBeer" width={50} />
-                <p>{beerDetails.name}</p>
+         <div className='single-beer-all'>
+                <img src={beerDetails.image_url} alt="imageBeer" width={250} />
+            <div className="single-beer-column">
+                <p className='single-beer-name'>{beerDetails.name}</p>
                 <br />
-                <p>{beerDetails.tagline}</p>
+                <p className='single-beer-tagline'>{beerDetails.tagline}</p>
                 <br />
-                <p>{beerDetails.first_brewed}</p>
+            </div>
+            <div className="single-beer-column">
+                <p className='single-beer-first'>{beerDetails.first_brewed}</p>
                 <br />
-                <p>{beerDetails.attenuation_level}</p>
+                <p className='single-beer-level'>{beerDetails.attenuation_level}</p>
                 <br />
-                <p>{beerDetails.description}</p>
+            </div>
+                <p className='single-beer-decription'>{beerDetails.description}</p>
                 <br />
-                <p>{beerDetails.contributed_by}</p>
+                <p className='single-beer-by'>{beerDetails.contributed_by}</p>
          </div>              
     </div>
   )

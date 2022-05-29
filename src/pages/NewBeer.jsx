@@ -55,56 +55,66 @@ function NewBeer() {
             <br />
             <div> 
                 <form onsubmit={handleSubmit}>
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name"><strong>Name &nbsp;&nbsp;</strong></label>
                     <input 
-                    type="text" 
-                    name='name'
-                    value={name}
-                    onChange={handleNameChange} />
+                        className='form-boxes'
+                        type="text" 
+                        name='name'
+                        value={name}
+                        onChange={handleNameChange} />
                     <br />
-                    <label htmlFor="tagline">Tagline</label>
+                    <label htmlFor="tagline"><strong>Tagline &nbsp;&nbsp;</strong></label>
                     <input 
-                    type="text" 
-                    name='tagline'
-                    value={tagline}
-                    onChange={handleTaglineChange}  />
+                        className='form-boxes'
+                        type="text" 
+                        name='tagline'
+                        value={tagline}
+                        onChange={handleTaglineChange}  />
                     <br />
-                    <label htmlFor="description">Description</label>
+                    <label htmlFor="description"><strong>Description &nbsp;&nbsp;</strong></label>
                     <input 
-                    type="text" 
-                    name='description'
-                    value={description}
-                    onChange={handleDescriptionChange}  />
+                        className='form-boxes'
+                        type="text" 
+                        name='description'
+                        value={description}
+                        onChange={handleDescriptionChange}  />
                     <br />
-                    <label htmlFor="first_brewed">First Brewed</label>
+                    <label htmlFor="first_brewed"><strong>First Brewed &nbsp;&nbsp;</strong></label>
                     <input 
-                    type="text" 
-                    name='first_brewed'
-                    value={first_brewed}
-                    onChange={handlefirst_brewedChange}  />
+                        
+                        className='form-boxes'
+                        type="text" 
+                        name='first_brewed'
+                        value={first_brewed}
+                        onChange={handlefirst_brewedChange}  />
                     <br />
-                    <label htmlFor="brewers_tips">Brewers Tips</label>
+                    <label htmlFor="brewers_tips"><strong>Brewers Tips &nbsp;&nbsp;</strong></label>
                     <input 
-                    type="text" 
-                    name='brewers_tips'
-                    value={brewers_tips} 
-                    onChange={handlebrewers_tipsChange} />
+                        className='form-boxes'
+                        type="text" 
+                        name='brewers_tips'
+                        value={brewers_tips} 
+                        onChange={handlebrewers_tipsChange} />
                     <br />
-                    <label htmlFor="attenuation_level">Attenuation Level</label>
+                    <label htmlFor="attenuation_level"><strong>Attenuation Level &nbsp;&nbsp;</strong></label>
                     <input 
-                    type="number" 
-                    name='attenuation_level'
-                    value={attenuation_level}
-                    onChange={handleattenuation_levelChange} />
+                        className='form-boxes'
+                        type="number" 
+                        name='attenuation_level'
+                        value={attenuation_level}
+                        onChange={handleattenuation_levelChange} />
                     <br />
-                    <label htmlFor="contributed_by">Contributed by</label>
+                 
+                    <label htmlFor="contributed_by"><strong>Contributed by &nbsp;&nbsp;</strong></label>
                     <input 
-                    type="text" 
-                    name='contributed_by'
-                    value={contributed_by}
-                    onChange={handlecontributed_byChange}  />
+                        className='form-boxes'
+                        type="text" 
+                        name='contributed_by'
+                        value={contributed_by}
+                        onChange={handlecontributed_byChange}  />
                     <br />
-                    <button>ADD NEW</button>
+                  
+                    <button className='btn'>ADD NEW</button>
                 </form>
             </div> 
         </div>
